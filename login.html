@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="고급스러운 디자인의 로그인 페이지입니다.">
+    <title>로그인 | 프리미엄 포털</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <header class="header">
+            <h1>다시 오신 것을 환영합니다</h1>
+            <p>로그인을 위해 정보를 입력해 주세요.</p>
+        </header>
+        
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <div class="form-group">
+                <label for="email">이메일 주소</label>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="name@company.com" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+            </div>
+
+            <div class="remember-me">
+                <label>
+                    <input type="checkbox" name="remember">
+                    계정 기억하기
+                </label>
+                <a href="#" style="color: var(--primary); text-decoration: none;">비밀번호를 잊으셨나요?</a>
+            </div>
+
+            <button type="submit" class="btn" id="loginBtn">로그인</button>
+        </form>
+
+        <p class="footer-text">
+            계정이 없으신가요? <a href="signup.html">회원가입하기</a>
+        </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
